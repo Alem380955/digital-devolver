@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 100px;
+    text-transform: uppercase;
+}
+
+main {
+    text-align: center;
+}
+
+.questionsTable  {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }

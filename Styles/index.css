@@ -1,0 +1,81 @@
+/*
+Author: Alem Mrkalj
+Date started: 28-3-2025
+Date finished:
+
+Dit is de css-bestand van de homepagina van Devolver Digital.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 100px;
+    text-transform: uppercase;
+}
+
+
+.Flexbox_Main {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.Tekst_Main {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.Foto_Main {
+    flex: 1;
+}   
+
+img {
+    max-width: fit-content; 
+    height: 540px;
+    float: right;
+}
+
+
+/*
+De orginele code voor de foto
+img {
+    width: 960px; 
+    height: 540px;
+    float: right;
+}
+*/
+
+footer {
+    margin: 0;
+    padding: 0; 
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h2 + p {
+    text-transform: uppercase;
+}

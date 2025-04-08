@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Author: Alem Mrkalj
+Date started: 4-4-2025
+Date finished:
+
+Dit is de html-bestand van de vragenlijst van Devolver Digital.
+-->
+<html lang="en">
+<body>
+    <head>
+        <!-- Tekenset declareren. -->
+        <meta charset="utf-8">
+        <!-- Viewport declareren. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- De bestand van desbetreffende CSS inladen. -->   
+        <link rel="stylesheet" href="../Styles/Questionnaire.css">
+        <!-- De titel van de pagina toevoegen. -->
+        <title>Questionnaire</title>
+        <!-- De bestand van de favicon toevoegen, waardoor er een favicon op de website is. -->
+        <link rel="icon" type="image/x-icon" href="/Images/Favicon_Devolver_Digital.jpg">
+        <!-- Hiermee link de JS bestand met dit HTML bestand -->
+        <script src="../Scripts/Questionnaire.js" defer></script>
+    </head>
+
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="../Index.html">GAMES</a></li>
+                <li><a href="https://www.devolverdigital.com/propaganda">PROPOGANDA</a></li>
+                <li><a href="https://merch.devolverdigital.co/">MERCH</a></li>
+                <li><a href="https://influencers.devolverdigital.com/">INFLUENCERS</a></li>
+                <li><a href="https://pitch.devolverdigital.com/">PITCH US</a></li>
+                <li><a href="/Pages/Questionnaire.html">QUESTIONNAIRE</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- antwoorden van de vragenlijst (resultaten) -->
+    <main>
+        <H1>Resultaten van de questionnaire</H1>
+        <p>Dit is de uitkomst van je antwoorden op de vragenlijst van Devolver Digital.</p>
+
+        
+        <div id="results" />
+
+
+        <script>
+                // Functie om een specifieke cookie te lezen
+                function getCookie(name) {
+                    let cookieArr = document.cookie.split(";");
+                    for (let i = 0; i < cookieArr.length; i++) {
+                        let cookiePair = cookieArr[i].split("=");
+                        if (name == cookiePair[0].trim()) {
+                            return decodeURIComponent(cookiePair[1]);
+                        }
+                    }
+                    return null;
+                }
+        
+                // Lees de cookie met de naam 'questionnaire'
+                let questionnaire= getCookie("questionnaire");
+                if (questionnaire) {
+                    console.log("De waarde van de cookie 'questionnaire' is: " + questionnaire);
+                    document.getElementById('results').innerHTML += questionnaire;
+                } else {
+                    console.log("De cookie 'questionnaire' is niet ingesteld.");
+        
+                }
+            </script>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

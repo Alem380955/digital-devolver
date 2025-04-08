@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+Author: Alem Mrkalj
+Date started: 4-4-2025
+Date finished:
+
+Dit is de html-bestand van de vragenlijst van Devolver Digital.
+-->
+<html lang="en">
+<body>
+    <head>
+        <!-- Tekenset declareren. -->
+        <meta charset="utf-8">
+        <!-- Viewport declareren. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- De bestand van desbetreffende CSS inladen. -->   
+        <link rel="stylesheet" href="../Styles/Questionnaire.css">
+        <!-- De titel van de pagina toevoegen. -->
+        <title>Questionnaire</title>
+        <!-- De bestand van de favicon toevoegen, waardoor er een favicon op de website is. -->
+        <link rel="icon" type="image/x-icon" href="/Images/Favicon_Devolver_Digital.jpg">
+        <!-- Hiermee link de JS bestand met dit HTML bestand -->
+        <script src="../Scripts/Questionnaire.js" defer></script>
+    </head>
+
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="../Index.html">GAMES</a></li>
+                <li><a href="https://www.devolverdigital.com/propaganda">PROPOGANDA</a></li>
+                <li><a href="https://merch.devolverdigital.co/">MERCH</a></li>
+                <li><a href="https://influencers.devolverdigital.com/">INFLUENCERS</a></li>
+                <li><a href="https://pitch.devolverdigital.com/">PITCH US</a></li>
+                <li><a href="/Pages/Questionnaire.html">QUESTIONNAIRE</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <!-- vragenlijst -->
+    <main>
+        <H1>Questionnaire</H1>
+        <p>Dit is de vragenlijst van Devolver Digital.</p>
+
+        <!-- in Form-element is methode POST (opsturen naar de server) gebruikt EN er is een link gelegd naar PHP-bestand -->
+        <form id="questionnaireForm" method="POST" action="./QuestionairreAnswers.php">        
+            <div>
+                <label for="genre">Question 1</label>
+                <select id="vraag_1" name="welke genre vindt de gebruiker interresant">
+                    <option value="human-fall_flat_2">I want a game with puzzles and climbing</option>
+                    <option value="cult_of_the_lamb">I want a mix of combat and management</option>
+                    <option value="enter_the_gungeon">I want a game full of chaos and lots of weapons</option>
+                    <option value="golf_for_workgroups">I just want a relaxed multiplayer game</option>                
+                </select>                
+            </div>
+            <div>
+                <label for="humor">Question 2:What kind of humor appeals to you the most?</label>
+                <select id="vraag_2" name="De humor van een game">
+                    <option value="human-fall_flat_2">Slapstick and physical comedy</option>
+                    <option value="cult_of_the_lamb">Dark humor with a cute twist</option>
+                    <option value="enter_the_gungeon">Fast and absurd action with wordplay</option>
+                    <option value="golf_for_workgroups">Lighthearted and chaotic multiplayer jokes</option>
+                </select>
+            </div>
+            <div>
+                <label for="challenge">Question 3:Do you want a game you can replay with new challenges each time?</label>
+                <select id="vraag_3" name="challenge">
+                    <option value="human-fall_flat_2">Not really, I prefer fixed levels and challenges</option>
+                    <option value="cult_of_the_lamb">A little, but I mostly want to build my own group</option>
+                    <option value="enter_the_gungeon">Yes, the more random challenges the better!</option>
+                    <option value="golf_for_workgroups">Not really, I just want to play and laugh with friends</option>
+                </select>
+            </div>
+            <div>
+                <label for="mood">Question 4: Are you in the mood for a game with a deep story?</label>
+                <select id="vraag_4" name="mood">
+                    <option value="human-fall_flat_2">Not really, I just want puzzles and fun</option>
+                    <option value="cult_of_the_lamb">Yes, but I also want to make choices and manage things</option>
+                    <option value="enter_the_gungeon">The story is less important than the action</option>
+                    <option value="golf_for_workgroups">No, it’s mostly about the gameplay for me</option>
+                </select>
+            </div>
+            <div>
+                <label for="difficulty">Question 5: How difficult should the game be?</label>
+                <select id="vraag_5" name="difficulty">
+                    <option value="human-fall_flat_2">Just fun and accessible</option>
+                    <option value="cult_of_the_lamb">Uitdagend, maar niet frustrerend</option>
+                    <option value="enter_the_gungeon">Ik wil een speel met chaos en veel wapens</option>
+                    <option value="golf_for_workgroups">Ik wil een speel met chaos en veel wapens</option>
+                </select>
+            </div>
+            <div>
+                <label for="humor2">Question 6: Wat voor soort humor spreekt je het meest aan?</label>
+                <select id="vraag_6" name="humor2">
+                    <option value="human-fall_flat_2">Ik wil een spel waarin je moet puzzelen en klimmen</option>
+                    <option value="cult_of_the_lamb">Ik wil een mix van vechten en management</option>
+                    <option value="enter_the_gungeon">Ik wil een speel met chaos en veel wapens</option>
+                    <option value="golf_for_workgroups">Ik wil een speel met chaos en veel wapens</option>
+                </select>                                
+            </div>
+            <div>
+                <label for="humor3">Question 7: Wat voor soort humor spreekt je het meest aan?</label>
+                <select id="vraag_7" name="humor3">
+                    <option value="human-fall_flat_2">Ik wil een spel waarin je moet puzzelen en klimmen</option>
+                    <option value="cult_of_the_lamb">Ik wil een mix van vechten en management</option>
+                    <option value="enter_the_gungeon">Ik wil een speel met chaos en veel wapens</option>
+                    <option value="golf_for_workgroups">Ik wil een speel met chaos en veel wapens</option>
+                </select>                
+            </div>
+            <div>
+                <label for="humor4">question 8: Wat voor soort humor spreekt je het meest aan?</label>
+                <select id="vraag_8" name="humor4">
+                    <option value="human-fall_flat_2">Ik wil een spel waarin je moet puzzelen en klimmen</option>
+                    <option value="cult_of_the_lamb">Ik wil een mix van vechten en management</option>
+                    <option value="enter_the_gungeon">Ik wil een speel met chaos en veel wapens</option>
+                    <option value="golf_for_workgroups">Ik wil een speel met chaos en veel wapens</option>
+                </select>                
+            </div>
+            <div>
+                <label for="humor5">Question 9: Wat voor soort humor spreekt je het meest aan?</label>
+                <select id="vraag_9" name="humor5">
+                    <option value="human-fall_flat_2">Ik wil een spel waarin je moet puzzelen en klimmen</option>
+                    <option value="cult_of_the_lamb">Ik wil een mix van vechten en management</option>
+                    <option value="enter_the_gungeon">Ik wil een speel met chaos en veel wapens</option>
+                    <option value="golf_for_workgroups">Ik wil een speel met chaos en veel wapens</option>
+                </select>
+            </div>
+            <div>
+                <label for="humor6">Question 10: Wat voor soort humor spreekt je het meest aan?</label>
+                <select id="vraag_10" name="humor6">
+                    <option value="human-fall_flat_2">Ik wil een spel waarin je moet puzzelen en klimmen</option>
+                    <option value="cult_of_the_lamb">Ik wil een mix van vechten en management</option>
+                    <option value="enter_the_gungeon">Ik wil een speel met chaos en veel wapens</option>
+                    <option value="golf_for_workgroups">Ik wil een speel met chaos en veel wapens</option>
+                </select>                
+            </div>
+
+            <!-- <button type="button" onclick="countAnswers()">Submit JS</button> -->
+
+            <label for="Feedback">Feedback</label>
+            <textarea id="Text_Feedback" name="Opmerking" placeholder="Tell your feedback.." style="height:200px"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        
+        
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <!--- Zet de cookie code in php. -->
+    <!-- <script>
+        function saveAnswersToCookie() {
+            // Get the form data
+            const form = document.getElementById('questionnaireForm');
+            const formData = new FormData(form);
+
+            // Convert form data to an object
+            const answers = {};
+            formData.forEach((value, key) => {
+                answers[key] = value;
+            });
+
+            // Save the answers as a JSON string in a cookie
+            document.cookie = `questionnaire=${JSON.stringify(answers)}; path=/; max-age=${7 * 24 * 60 * 60}`;
+
+            alert('Your answers have been saved in a cookie!');
+        }
+    </script> -->
+</body>
+</html>
